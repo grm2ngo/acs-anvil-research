@@ -42,6 +42,8 @@ type census   ACVI_CHR x418 · ACVI_UIicon x198 · ACVI_UI x191 · ...
 
 ## The container at a glance
 
+![research stats](docs/stats-banner.svg)
+
 ![.forge container layout](docs/forge-container-diagram.svg)
 
 ## Contents

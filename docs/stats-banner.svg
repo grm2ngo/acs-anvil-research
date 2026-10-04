@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="120" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="640" height="120" rx="12" fill="#0f1218"/>
+  <rect width="10" height="120" rx="4" fill="#2c7a7b"/>
+  <g fill="#e2e8f0" font-size="26" font-weight="600">
+    <text x="36" y="42">40 archives</text>
+    <text x="196" y="42">357,161 entries</text>
+    <text x="416" y="42">89/89 thunks</text>
+  </g>
+  <g fill="#7f8ea0" font-size="16">
+    <text x="36" y="70">.forge containers censused</text>
+    <text x="196" y="70">100% named, type-censused</text>
+    <text x="416" y="70">Uplay R1 ABI mapped</text>
+  </g>
+  <g fill="#2f8f8f" font-size="15">
+    <text x="36" y="100">snapshot 2026-10-05 · evidence-first workflow · publication gate: ALL CLEAN</text>
+  </g>
+</svg>
