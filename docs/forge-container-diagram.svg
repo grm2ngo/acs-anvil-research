@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="560" viewBox="0 0 780 560" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a5568"/>
+    </marker>
+  </defs>
+  <style>
+    .hdr{fill:#1a202c;color:#fff} .blk{fill:#edf2f7;stroke:#4a5568;stroke-width:1.2}
+    .hot{fill:#fefcbf;stroke:#b7791f} .lbl{font-size:13px;fill:#2d3748}
+    .sub{font-size:11px;fill:#718096} .tit{font-size:15px;font-weight:600;fill:#1a202c}
+  </style>
+
+  <text x="20" y="28" class="tit">.forge container — AnvilNext (ACS 2015)</text>
+
+  <!-- file body -->
+  <rect x="20" y="45" width="740" height="480" rx="10" fill="#f7fafc" stroke="#a0aec0" stroke-dasharray="6 4"/>
+  <text x="745" y="66" class="sub" text-anchor="end">file (little-endian)</text>
+
+  <!-- header -->
+  <rect x="45" y="65" width="690" height="66" rx="6" class="hdr"/>
+  <text x="60" y="90" fill="#fff" font-size="13">FILE HEADER — magic "scimitar" · version 27 (0x1B)</text>
+  <text x="60" y="112" fill="#cbd5e0" font-size="11">dataHeader @ 0x41A · 0x1000 field · terminator -1</text>
+
+  <!-- descriptors -->
+  <rect x="45" y="150" width="335" height="52" rx="6" class="blk"/>
+  <text x="60" y="172" class="lbl">descriptor 1 — {N, 2, → descriptor 2}</text>
+  <text x="60" y="190" class="sub">count handshake</text>
+  <rect x="400" y="150" width="335" height="52" rx="6" class="blk"/>
+  <text x="415" y="172" class="lbl">descriptor 2 — {N, 2, → index table}</text>
+  <text x="415" y="190" class="sub">indexTableOffset 0x476</text>
+
+  <!-- index table -->
+  <rect x="45" y="222" width="335" height="64" rx="6" class="hot"/>
+  <text x="60" y="245" class="lbl">INDEX TABLE — N × 20 B records</text>
+  <text x="60" y="263" class="sub">id · type · data offset/size · block-set link</text>
+  <line x1="380" y1="176" x2="452" y2="222" stroke="#4a5568" marker-end="url(#arr)"/>
+
+  <!-- name table -->
+  <rect x="400" y="222" width="335" height="64" rx="6" class="hot"/>
+  <text x="415" y="245" class="lbl">NAME TABLE — entry 0 special (212 B)</text>
+  <text x="415" y="263" class="sub">then 192 B records · name @ +0x2C</text>
+  <line x1="380" y1="263" x2="400" y2="252" stroke="#4a5568" marker-end="url(#arr)"/>
+
+  <!-- payloads -->
+  <rect x="45" y="322" width="690" height="80" rx="6" class="blk"/>
+  <text x="60" y="347" class="lbl">PAYLOAD ARENA — contiguous, index order</text>
+  <text x="60" y="367" class="sub">block sets (magic 0x1004FA9957FBAA33) · LZO1X-compressed chunks · Adler-32 zero-init</text>
+  <text x="60" y="387" class="sub">file end = last payload padded to 0x8000</text>
+  <line x1="212" y1="286" x2="160" y2="322" stroke="#4a5568" marker-end="url(#arr)"/>
+  <line x1="567" y1="286" x2="600" y2="322" stroke="#4a5568" marker-end="url(#arr)"/>
+
+  <!-- entry types legend -->
+  <rect x="45" y="425" width="690" height="80" rx="6" fill="#e6fffa" stroke="#2c7a7b"/>
+  <text x="60" y="448" class="lbl">ENTRY TYPES seen (type census, 40 archives / 357,161 entries)</text>
+  <text x="60" y="468" class="sub">Mesh 18k+ · Entity 1k+ · Texture/TextureMap · GIDBCell (_gi archives) · DominoScript · Cinematic · UIIconDesc · AnimStreamBlock · ClothAsset …</text>
+  <text x="60" y="487" class="sub">tooling: tools/forge_reader.py (index/census) · mesh_extract.py (OBJ) · texture_extract.py (BC1/2/3/5, cubemap, RGBA8, R32F)</text>
+</svg>
