@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Python](https://img.shields.io/badge/python-3.10%2B-3776ab)
 ![Platform](https://img.shields.io/badge/platform-windows-lightgrey)
-![Docs](https://img.shields.io/badge/format%20specs-6-informational)
+![Docs](https://img.shields.io/badge/format%20specs-9-informational)
 ![Gate](https://img.shields.io/badge/publication%20gate-ALL%20CLEAN-brightgreen)
 
 **Format tooling, specifications, and reverse-engineering notes for
@@ -46,12 +46,23 @@ type census   ACVI_CHR x418 · ACVI_UIicon x198 · ACVI_UI x191 · ...
 
 ![.forge container layout](docs/forge-container-diagram.svg)
 
+## The install at a glance
+
+![install anatomy](docs/install-anatomy.svg)
+
+New: the [19-byte locale selector](docs/localization-lang.md), the
+[full PE surface with the 12 named exports](docs/exe-surface.md), and the
+[measured install layout](docs/install-layout.md).
+
 ## Contents
 
 | Doc | What you get |
 |---|---|
 | [`docs/forge-format.md`](docs/forge-format.md) | container spec: header, descriptors, index & name tables |
 | [`docs/forge-format-analysis.md`](docs/forge-format-analysis.md) | deep dive: block sets, LZO1X chunks, Adler-32, entry-0 quirk |
+| [`docs/exe-surface.md`](docs/exe-surface.md) | ACS.exe static surface: sections, the 31-DLL import wall, **12 named exports + RVAs** |
+| [`docs/install-layout.md`](docs/install-layout.md) | measured install map: forge/sound/video/dlc blocks, root config files |
+| [`docs/localization-lang.md`](docs/localization-lang.md) | the 19-byte locale selector, byte by byte |
 | [`docs/uplay-r1-semantics.json`](docs/uplay-r1-semantics.json) | all 89 Uplay R1 exports: thunk targets, arg-register order, referenced names |
 | [`docs/steam-ifaces.json`](docs/steam-ifaces.json) | the 9 interfaces the shipped 2014-era `steam_api64` exposes |
 | [`docs/iat-analysis.md`](docs/iat-analysis.md) | why this title has no classic IAT — and what that implies |
@@ -69,6 +80,12 @@ uplay_r1_loader64.dll (unpacked, 89 exports)
                           export-name table (see uplay-r1-semantics.json
                           for every mapping + arg-register order)
 ```
+</details>
+
+<details>
+<summary><b>The import wall — why 31 DLLs import one function each</b> (click)</summary>
+
+![iat walled garden](docs/iat-walled-garden.svg)
 </details>
 
 ## Verification discipline
