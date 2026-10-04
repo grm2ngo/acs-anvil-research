@@ -1,0 +1,16 @@
+{
+ "file": "D:\\<GAME_DIR>",
+ "interfaces": [
+  "SteamClient012",
+  "SteamFriends014",
+  "SteamGameServer011",
+  "SteamGameServerStats001",
+  "SteamMatchMaking009",
+  "SteamMatchMakingServers002",
+  "SteamNetworking005",
+  "SteamUser017",
+  "SteamUtils006"
+ ],
+ "interface_count": 9,
+ "version_like_strings": []
+}

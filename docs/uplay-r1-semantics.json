@@ -1,0 +1,2937 @@
+{
+ "file": "uplay_r1_loader64.dll",
+ "image_base": "0x180000000",
+ "exports_total": 89,
+ "iat_slots": 118,
+ "exports": [
+  {
+   "name": "UPLAY_SAVE_Remove",
+   "rva": "0x101e",
+   "thunk_target_rva": "0x63c0",
+   "insns": 180,
+   "arg_touch_order": [
+    "rdx@0x63d1",
+    "rcx@0x63e8",
+    "r9@0x64bb",
+    "r8@0x64be"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_SAVE_Remove",
+    "UPLAY_SAVE_SetName",
+    "UPLAY_SAVE_Write"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_Init",
+   "rva": "0x103c",
+   "thunk_target_rva": "0x5c30",
+   "insns": 446,
+   "arg_touch_order": [
+    "rcx@0x5c51",
+    "rdx@0x5c60",
+    "r8@0x6036"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_Init",
+    "UPLAY_PARTY_InvitePartyToGame",
+    "UPLAY_PARTY_InviteToParty",
+    "UPLAY_PARTY_IsInParty",
+    "UPLAY_PARTY_IsPartyLeader",
+    "UPLAY_PARTY_PromoteToLeader",
+    "UPLAY_PARTY_RespondToGameInvite",
+    "UPLAY_PARTY_SetGuest",
+    "UPLAY_PARTY_SetUserData",
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_ACH_Write",
+   "rva": "0x1041",
+   "thunk_target_rva": "0x4660",
+   "insns": 53,
+   "arg_touch_order": [
+    "rcx@0x4681",
+    "rdx@0x4690",
+    "r8@0x46c6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_ACH_Write"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_Quit",
+   "rva": "0x1046",
+   "thunk_target_rva": "0x40f0",
+   "insns": 113,
+   "arg_touch_order": [
+    "rcx@0x410d",
+    "rdx@0x411c"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_Quit",
+    "UPLAY_SetLanguage"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0",
+    "sub_182b0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_ACH_ReleaseAchievementList",
+   "rva": "0x1069",
+   "thunk_target_rva": "0x4600",
+   "insns": 94,
+   "arg_touch_order": [
+    "rcx@0x460d",
+    "rdx@0x4631",
+    "r8@0x46c6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_ACH_ReleaseAchievementList",
+    "UPLAY_ACH_Write"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_OVERLAY_ShowShopUrl",
+   "rva": "0x106e",
+   "thunk_target_rva": "0x58b0",
+   "insns": 51,
+   "arg_touch_order": [
+    "rcx@0x58bd",
+    "rdx@0x58e1",
+    "r8@0x5916"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_OVERLAY_ShowShopUrl"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_FRIENDS_EnableFriendMenuItem",
+   "rva": "0x1078",
+   "thunk_target_rva": "0x4d50",
+   "insns": 401,
+   "arg_touch_order": [
+    "r8@0x4d66",
+    "rcx@0x4d7f",
+    "rdx@0x4d8e",
+    "r9@0x505b"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_FRIENDS_EnableFriendMenuItem",
+    "UPLAY_FRIENDS_GetFriendList",
+    "UPLAY_FRIENDS_Init",
+    "UPLAY_FRIENDS_InviteToGame",
+    "UPLAY_FRIENDS_IsBlackListed",
+    "UPLAY_FRIENDS_IsFriend",
+    "UPLAY_FRIENDS_RequestFriendship",
+    "UPLAY_FRIENDS_ShowFriendSelectionUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_WIN_ReleaseActionList",
+   "rva": "0x1082",
+   "thunk_target_rva": "0x7030",
+   "insns": 195,
+   "arg_touch_order": [
+    "rcx@0x703d",
+    "rdx@0x7061",
+    "r8@0x7106"
+   ],
+   "arg_writes": [],
+   "arg_reads": [
+    {
+     "reg": "rcx",
+     "disp": 0,
+     "at": "mov rax, qword ptr [rcx]"
+    }
+   ],
+   "strings": [
+    "UPLAY_WIN_ReleaseActionList",
+    "UPLAY_WIN_ReleaseRewardList",
+    "UPLAY_WIN_SetActionsCompleted"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0",
+    "sub_148b0",
+    "sub_721e"
+   ],
+   "export_thunks": [],
+   "ret_shape": "tail-jmp",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_FRIENDS_GetFriendList",
+   "rva": "0x1091",
+   "thunk_target_rva": "0x4dd0",
+   "insns": 347,
+   "arg_touch_order": [
+    "rdx@0x4de1",
+    "rcx@0x4df8",
+    "r9@0x505b",
+    "r8@0x505e"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_FRIENDS_GetFriendList",
+    "UPLAY_FRIENDS_Init",
+    "UPLAY_FRIENDS_InviteToGame",
+    "UPLAY_FRIENDS_IsBlackListed",
+    "UPLAY_FRIENDS_IsFriend",
+    "UPLAY_FRIENDS_RequestFriendship",
+    "UPLAY_FRIENDS_ShowFriendSelectionUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_Start",
+   "rva": "0x10a5",
+   "thunk_target_rva": "0x41b0",
+   "insns": 24,
+   "arg_touch_order": [
+    "rcx@0x41d7"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_182b0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": []
+  },
+  {
+   "name": "UPLAY_SAVE_Close",
+   "rva": "0x10b9",
+   "thunk_target_rva": "0x6150",
+   "insns": 458,
+   "arg_touch_order": [
+    "rcx@0x6171",
+    "rdx@0x6180",
+    "r9@0x623b",
+    "r8@0x623e"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_SAVE_Close",
+    "UPLAY_SAVE_GetSavegames",
+    "UPLAY_SAVE_Open",
+    "UPLAY_SAVE_Read",
+    "UPLAY_SAVE_ReleaseGameList",
+    "UPLAY_SAVE_Remove",
+    "UPLAY_SAVE_SetName",
+    "UPLAY_SAVE_Write"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_METADATA_ClearContinuousTag",
+   "rva": "0x10c3",
+   "thunk_target_rva": "0x54d0",
+   "insns": 143,
+   "arg_touch_order": [
+    "rcx@0x54dd",
+    "rdx@0x5501",
+    "r8@0x5616"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_METADATA_ClearContinuousTag",
+    "UPLAY_METADATA_SetContinuousTag",
+    "UPLAY_METADATA_SetSingleEventTag"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_SAVE_Write",
+   "rva": "0x10e6",
+   "thunk_target_rva": "0x64a0",
+   "insns": 84,
+   "arg_touch_order": [
+    "r9@0x64bb",
+    "r8@0x64be",
+    "rcx@0x64d7",
+    "rdx@0x64e6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_SAVE_Write"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_SAVE_SetName",
+   "rva": "0x10f0",
+   "thunk_target_rva": "0x6430",
+   "insns": 132,
+   "arg_touch_order": [
+    "rdx@0x6441",
+    "rcx@0x6458",
+    "r9@0x64bb",
+    "r8@0x64be"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_SAVE_SetName",
+    "UPLAY_SAVE_Write"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_FRIENDS_IsFriend",
+   "rva": "0x1104",
+   "thunk_target_rva": "0x4f70",
+   "insns": 169,
+   "arg_touch_order": [
+    "rcx@0x4f7d",
+    "rdx@0x4fa1",
+    "r9@0x505b",
+    "r8@0x505e"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_FRIENDS_IsFriend",
+    "UPLAY_FRIENDS_RequestFriendship",
+    "UPLAY_FRIENDS_ShowFriendSelectionUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_PromoteToLeader",
+   "rva": "0x1109",
+   "thunk_target_rva": "0x5e20",
+   "insns": 234,
+   "arg_touch_order": [
+    "rdx@0x5e31",
+    "rcx@0x5e34",
+    "r8@0x6036"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_PromoteToLeader",
+    "UPLAY_PARTY_RespondToGameInvite",
+    "UPLAY_PARTY_SetGuest",
+    "UPLAY_PARTY_SetUserData",
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_FRIENDS_ShowFriendSelectionUI",
+   "rva": "0x113b",
+   "thunk_target_rva": "0x5040",
+   "insns": 82,
+   "arg_touch_order": [
+    "r9@0x505b",
+    "r8@0x505e",
+    "rcx@0x5063",
+    "rdx@0x5087"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_FRIENDS_ShowFriendSelectionUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_SAVE_ReleaseGameList",
+   "rva": "0x1145",
+   "thunk_target_rva": "0x6360",
+   "insns": 221,
+   "arg_touch_order": [
+    "rcx@0x636d",
+    "rdx@0x6391",
+    "r9@0x64bb",
+    "r8@0x64be"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_SAVE_ReleaseGameList",
+    "UPLAY_SAVE_Remove",
+    "UPLAY_SAVE_SetName",
+    "UPLAY_SAVE_Write"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_ACH_GetAchievements",
+   "rva": "0x114f",
+   "thunk_target_rva": "0x4500",
+   "insns": 207,
+   "arg_touch_order": [
+    "r9@0x451b",
+    "r8@0x451e",
+    "rdx@0x4521",
+    "rcx@0x4538"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_ACH_GetAchievements",
+    "UPLAY_ACH_ReleaseAchievementImage",
+    "UPLAY_ACH_ReleaseAchievementList",
+    "UPLAY_ACH_Write"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_WIN_GetUnitBalance",
+   "rva": "0x1168",
+   "thunk_target_rva": "0x6fc0",
+   "insns": 241,
+   "arg_touch_order": [
+    "rdx@0x6fd1",
+    "rcx@0x6fd4",
+    "r8@0x7106"
+   ],
+   "arg_writes": [],
+   "arg_reads": [
+    {
+     "reg": "rcx",
+     "disp": 0,
+     "at": "mov rax, qword ptr [rcx]"
+    }
+   ],
+   "strings": [
+    "UPLAY_WIN_GetUnitBalance",
+    "UPLAY_WIN_ReleaseActionList",
+    "UPLAY_WIN_ReleaseRewardList",
+    "UPLAY_WIN_SetActionsCompleted"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0",
+    "sub_148b0",
+    "sub_721e"
+   ],
+   "export_thunks": [],
+   "ret_shape": "tail-jmp",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_AVATAR_Get",
+   "rva": "0x1172",
+   "thunk_target_rva": "0x46f0",
+   "insns": 123,
+   "arg_touch_order": [
+    "r9@0x470b",
+    "r8@0x470e",
+    "rcx@0x4713",
+    "rdx@0x4737"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_AVATAR_Get",
+    "UPLAY_AVATAR_Release"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_GetNameUtf8",
+   "rva": "0x1190",
+   "thunk_target_rva": "0x6a20",
+   "insns": 385,
+   "arg_touch_order": [
+    "rcx@0x6a3d",
+    "rdx@0x6a4c",
+    "r8@0x6cd6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_GetNameUtf8",
+    "UPLAY_USER_GetTicketUtf8",
+    "UPLAY_USER_IsConnected",
+    "UPLAY_USER_IsInOfflineMode",
+    "UPLAY_USER_IsOwned",
+    "UPLAY_USER_ReleaseCdKeyList",
+    "UPLAY_USER_ReleaseConsumeItemResult",
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_GetConsumableItems",
+   "rva": "0x119a",
+   "thunk_target_rva": "0x6960",
+   "insns": 472,
+   "arg_touch_order": [
+    "rcx@0x696d",
+    "rdx@0x6991",
+    "r8@0x6cd6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_GetConsumableItems",
+    "UPLAY_USER_GetEmailUtf8",
+    "UPLAY_USER_GetNameUtf8",
+    "UPLAY_USER_GetTicketUtf8",
+    "UPLAY_USER_IsConnected",
+    "UPLAY_USER_IsInOfflineMode",
+    "UPLAY_USER_IsOwned",
+    "UPLAY_USER_ReleaseCdKeyList",
+    "UPLAY_USER_ReleaseConsumeItemResult",
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PeekNextEvent",
+   "rva": "0x11a4",
+   "thunk_target_rva": "0x4090",
+   "insns": 154,
+   "arg_touch_order": [
+    "rcx@0x409d",
+    "rdx@0x40c1"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PeekNextEvent",
+    "UPLAY_Quit",
+    "UPLAY_SetLanguage"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0",
+    "sub_182b0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_METADATA_SetContinuousTag",
+   "rva": "0x11ae",
+   "thunk_target_rva": "0x5530",
+   "insns": 102,
+   "arg_touch_order": [
+    "rdx@0x5541",
+    "rcx@0x5544",
+    "r8@0x5616"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_METADATA_SetContinuousTag",
+    "UPLAY_METADATA_SetSingleEventTag"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_METADATA_SetSingleEventTag",
+   "rva": "0x11b3",
+   "thunk_target_rva": "0x55a0",
+   "insns": 56,
+   "arg_touch_order": [
+    "rdx@0x55b1",
+    "rcx@0x55b4",
+    "r8@0x5616"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_METADATA_SetSingleEventTag"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_GetOverlappedOperationResult",
+   "rva": "0x11c7",
+   "thunk_target_rva": "0x5670",
+   "insns": 297,
+   "arg_touch_order": [
+    "rdx@0x5681",
+    "rcx@0x5684",
+    "r8@0x5916"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_GetOverlappedOperationResult",
+    "UPLAY_HasOverlappedOperationCompleted",
+    "UPLAY_OVERLAY_ShowFacebookAuthentication",
+    "UPLAY_OVERLAY_SetShopUrl",
+    "UPLAY_OVERLAY_Show",
+    "UPLAY_OVERLAY_ShowShopUrl"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_OVERLAY_Show",
+   "rva": "0x11d6",
+   "thunk_target_rva": "0x5840",
+   "insns": 99,
+   "arg_touch_order": [
+    "rdx@0x5851",
+    "rcx@0x5868",
+    "r8@0x5916"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_OVERLAY_Show",
+    "UPLAY_OVERLAY_ShowShopUrl"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_FRIENDS_AddToBlackList",
+   "rva": "0x11db",
+   "thunk_target_rva": "0x4c80",
+   "insns": 490,
+   "arg_touch_order": [
+    "rdx@0x4c91",
+    "rcx@0x4c94",
+    "r8@0x4d66",
+    "r9@0x505b"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_FRIENDS_AddToBlackList",
+    "UPLAY_FRIENDS_DisableFriendMenuItem",
+    "UPLAY_FRIENDS_EnableFriendMenuItem",
+    "UPLAY_FRIENDS_GetFriendList",
+    "UPLAY_FRIENDS_Init",
+    "UPLAY_FRIENDS_InviteToGame",
+    "UPLAY_FRIENDS_IsBlackListed",
+    "UPLAY_FRIENDS_IsFriend",
+    "UPLAY_FRIENDS_RequestFriendship",
+    "UPLAY_FRIENDS_ShowFriendSelectionUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_INSTALLER_AreChunksInstalled",
+   "rva": "0x11e0",
+   "thunk_target_rva": "0x51d0",
+   "insns": 323,
+   "arg_touch_order": [
+    "rcx@0x51e3",
+    "rdx@0x5207",
+    "r8@0x54a6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_INSTALLER_AreChunksInstalled",
+    "UPLAY_INSTALLER_GetChunkIdsFromTag",
+    "UPLAY_INSTALLER_GetChunks",
+    "UPLAY_INSTALLER_GetLanguageUtf8",
+    "UPLAY_INSTALLER_Init",
+    "UPLAY_INSTALLER_ReleaseChunkIdList",
+    "UPLAY_INSTALLER_UpdateInstallOrder"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_GetTicketUtf8",
+   "rva": "0x11ea",
+   "thunk_target_rva": "0x6a80",
+   "insns": 339,
+   "arg_touch_order": [
+    "rcx@0x6a9d",
+    "rdx@0x6aac",
+    "r8@0x6cd6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_GetTicketUtf8",
+    "UPLAY_USER_IsConnected",
+    "UPLAY_USER_IsInOfflineMode",
+    "UPLAY_USER_IsOwned",
+    "UPLAY_USER_ReleaseCdKeyList",
+    "UPLAY_USER_ReleaseConsumeItemResult",
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_SetUserData",
+   "rva": "0x11ef",
+   "thunk_target_rva": "0x5f70",
+   "insns": 94,
+   "arg_touch_order": [
+    "rcx@0x5f7d",
+    "rdx@0x5fa1",
+    "r8@0x6036"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_SetUserData",
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_GetAccountIdUtf8",
+   "rva": "0x120d",
+   "thunk_target_rva": "0x6830",
+   "insns": 607,
+   "arg_touch_order": [
+    "rcx@0x684d",
+    "rdx@0x685c",
+    "r8@0x6cd6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_GetAccountIdUtf8",
+    "UPLAY_USER_GetCdKeyUtf8",
+    "UPLAY_USER_GetCdKeys",
+    "UPLAY_USER_GetConsumableItems",
+    "UPLAY_USER_GetEmailUtf8",
+    "UPLAY_USER_GetNameUtf8",
+    "UPLAY_USER_GetTicketUtf8",
+    "UPLAY_USER_IsConnected",
+    "UPLAY_USER_IsInOfflineMode",
+    "UPLAY_USER_IsOwned",
+    "UPLAY_USER_ReleaseCdKeyList",
+    "UPLAY_USER_ReleaseConsumeItemResult",
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_GetInGameMemberList",
+   "rva": "0x1217",
+   "thunk_target_rva": "0x5bd0",
+   "insns": 487,
+   "arg_touch_order": [
+    "rcx@0x5bdd",
+    "rdx@0x5c01",
+    "r8@0x6036"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_GetInGameMemberList",
+    "UPLAY_PARTY_Init",
+    "UPLAY_PARTY_InvitePartyToGame",
+    "UPLAY_PARTY_InviteToParty",
+    "UPLAY_PARTY_IsInParty",
+    "UPLAY_PARTY_IsPartyLeader",
+    "UPLAY_PARTY_PromoteToLeader",
+    "UPLAY_PARTY_RespondToGameInvite",
+    "UPLAY_PARTY_SetGuest",
+    "UPLAY_PARTY_SetUserData",
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_GetNextEvent",
+   "rva": "0x1226",
+   "thunk_target_rva": "0x4030",
+   "insns": 195,
+   "arg_touch_order": [
+    "rcx@0x403d",
+    "rdx@0x4061"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_GetNextEvent",
+    "UPLAY_PeekNextEvent",
+    "UPLAY_Quit",
+    "UPLAY_SetLanguage"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0",
+    "sub_182b0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_SAVE_Read",
+   "rva": "0x1230",
+   "thunk_target_rva": "0x62c0",
+   "insns": 295,
+   "arg_touch_order": [
+    "r9@0x62db",
+    "r8@0x62de",
+    "rcx@0x62f7",
+    "rdx@0x6306"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_SAVE_Read",
+    "UPLAY_SAVE_ReleaseGameList",
+    "UPLAY_SAVE_Remove",
+    "UPLAY_SAVE_SetName",
+    "UPLAY_SAVE_Write"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_WIN_GetActions",
+   "rva": "0x1249",
+   "thunk_target_rva": "0x6ee0",
+   "insns": 333,
+   "arg_touch_order": [
+    "rdx@0x6ef1",
+    "rcx@0x6ef4",
+    "r8@0x7106"
+   ],
+   "arg_writes": [],
+   "arg_reads": [
+    {
+     "reg": "rcx",
+     "disp": 0,
+     "at": "mov rax, qword ptr [rcx]"
+    }
+   ],
+   "strings": [
+    "UPLAY_WIN_GetActions",
+    "UPLAY_WIN_GetRewards",
+    "UPLAY_WIN_GetUnitBalance",
+    "UPLAY_WIN_ReleaseActionList",
+    "UPLAY_WIN_ReleaseRewardList",
+    "UPLAY_WIN_SetActionsCompleted"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0",
+    "sub_148b0",
+    "sub_721e"
+   ],
+   "export_thunks": [],
+   "ret_shape": "tail-jmp",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_WIN_GetRewards",
+   "rva": "0x124e",
+   "thunk_target_rva": "0x6f50",
+   "insns": 287,
+   "arg_touch_order": [
+    "rdx@0x6f61",
+    "rcx@0x6f64",
+    "r8@0x7106"
+   ],
+   "arg_writes": [],
+   "arg_reads": [
+    {
+     "reg": "rcx",
+     "disp": 0,
+     "at": "mov rax, qword ptr [rcx]"
+    }
+   ],
+   "strings": [
+    "UPLAY_WIN_GetRewards",
+    "UPLAY_WIN_GetUnitBalance",
+    "UPLAY_WIN_ReleaseActionList",
+    "UPLAY_WIN_ReleaseRewardList",
+    "UPLAY_WIN_SetActionsCompleted"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0",
+    "sub_148b0",
+    "sub_721e"
+   ],
+   "export_thunks": [],
+   "ret_shape": "tail-jmp",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_IsPartyLeader",
+   "rva": "0x1258",
+   "thunk_target_rva": "0x5dc0",
+   "insns": 275,
+   "arg_touch_order": [
+    "rcx@0x5dcd",
+    "rdx@0x5df1",
+    "r8@0x6036"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_IsPartyLeader",
+    "UPLAY_PARTY_PromoteToLeader",
+    "UPLAY_PARTY_RespondToGameInvite",
+    "UPLAY_PARTY_SetGuest",
+    "UPLAY_PARTY_SetUserData",
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_ReleaseCdKeyList",
+   "rva": "0x1262",
+   "thunk_target_rva": "0x6c00",
+   "insns": 158,
+   "arg_touch_order": [
+    "rcx@0x6c0d",
+    "rdx@0x6c31",
+    "r8@0x6cd6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_ReleaseCdKeyList",
+    "UPLAY_USER_ReleaseConsumeItemResult",
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_CHAT_GetHistory",
+   "rva": "0x1267",
+   "thunk_target_rva": "0x48b0",
+   "insns": 273,
+   "arg_touch_order": [
+    "r9@0x48cb",
+    "r8@0x48ce",
+    "rcx@0x48d3",
+    "rdx@0x48f7"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_CHAT_GetHistory",
+    "UPLAY_CHAT_Init",
+    "UPLAY_CHAT_ReleaseHistoryList",
+    "UPLAY_CHAT_SendMessage",
+    "UPLAY_CHAT_SetMessagesRead"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_InvitePartyToGame",
+   "rva": "0x1271",
+   "thunk_target_rva": "0x5c90",
+   "insns": 403,
+   "arg_touch_order": [
+    "rcx@0x5c9d",
+    "rdx@0x5cc1",
+    "r8@0x6036"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_InvitePartyToGame",
+    "UPLAY_PARTY_InviteToParty",
+    "UPLAY_PARTY_IsInParty",
+    "UPLAY_PARTY_IsPartyLeader",
+    "UPLAY_PARTY_PromoteToLeader",
+    "UPLAY_PARTY_RespondToGameInvite",
+    "UPLAY_PARTY_SetGuest",
+    "UPLAY_PARTY_SetUserData",
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_GetLastError",
+   "rva": "0x1276",
+   "thunk_target_rva": "0x3fd0",
+   "insns": 236,
+   "arg_touch_order": [
+    "rcx@0x3fdd",
+    "rdx@0x4001"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_GetLastError",
+    "UPLAY_GetNextEvent",
+    "UPLAY_PeekNextEvent",
+    "UPLAY_Quit",
+    "UPLAY_SetLanguage"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0",
+    "sub_182b0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_INSTALLER_Init",
+   "rva": "0x127b",
+   "thunk_target_rva": "0x5370",
+   "insns": 142,
+   "arg_touch_order": [
+    "rcx@0x5391",
+    "rdx@0x53a0",
+    "r8@0x54a6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_INSTALLER_Init",
+    "UPLAY_INSTALLER_ReleaseChunkIdList",
+    "UPLAY_INSTALLER_UpdateInstallOrder"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_INSTALLER_GetLanguageUtf8",
+   "rva": "0x1285",
+   "thunk_target_rva": "0x5310",
+   "insns": 188,
+   "arg_touch_order": [
+    "rcx@0x532d",
+    "rdx@0x533c",
+    "r8@0x54a6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_INSTALLER_GetLanguageUtf8",
+    "UPLAY_INSTALLER_Init",
+    "UPLAY_INSTALLER_ReleaseChunkIdList",
+    "UPLAY_INSTALLER_UpdateInstallOrder"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_IsInOfflineMode",
+   "rva": "0x1294",
+   "thunk_target_rva": "0x6b40",
+   "insns": 247,
+   "arg_touch_order": [
+    "rcx@0x6b5d",
+    "rdx@0x6b6c",
+    "r8@0x6cd6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_IsInOfflineMode",
+    "UPLAY_USER_IsOwned",
+    "UPLAY_USER_ReleaseCdKeyList",
+    "UPLAY_USER_ReleaseConsumeItemResult",
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_WIN_ReleaseRewardList",
+   "rva": "0x129e",
+   "thunk_target_rva": "0x7090",
+   "insns": 154,
+   "arg_touch_order": [
+    "rcx@0x709d",
+    "rdx@0x70c1",
+    "r8@0x7106"
+   ],
+   "arg_writes": [],
+   "arg_reads": [
+    {
+     "reg": "rcx",
+     "disp": 0,
+     "at": "mov rax, qword ptr [rcx]"
+    }
+   ],
+   "strings": [
+    "UPLAY_WIN_ReleaseRewardList",
+    "UPLAY_WIN_SetActionsCompleted"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0",
+    "sub_148b0",
+    "sub_721e"
+   ],
+   "export_thunks": [],
+   "ret_shape": "tail-jmp",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_GetFullMemberList",
+   "rva": "0x12a8",
+   "thunk_target_rva": "0x5b10",
+   "insns": 574,
+   "arg_touch_order": [
+    "rcx@0x5b1d",
+    "rdx@0x5b41",
+    "r8@0x6036"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_GetFullMemberList",
+    "UPLAY_PARTY_GetId",
+    "UPLAY_PARTY_GetInGameMemberList",
+    "UPLAY_PARTY_Init",
+    "UPLAY_PARTY_InvitePartyToGame",
+    "UPLAY_PARTY_InviteToParty",
+    "UPLAY_PARTY_IsInParty",
+    "UPLAY_PARTY_IsPartyLeader",
+    "UPLAY_PARTY_PromoteToLeader",
+    "UPLAY_PARTY_RespondToGameInvite",
+    "UPLAY_PARTY_SetGuest",
+    "UPLAY_PARTY_SetUserData",
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_EnablePartyMemberMenuItem",
+   "rva": "0x12bc",
+   "thunk_target_rva": "0x5a90",
+   "insns": 628,
+   "arg_touch_order": [
+    "r8@0x5aa6",
+    "rcx@0x5abf",
+    "rdx@0x5ace"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_EnablePartyMemberMenuItem",
+    "UPLAY_PARTY_GetFullMemberList",
+    "UPLAY_PARTY_GetId",
+    "UPLAY_PARTY_GetInGameMemberList",
+    "UPLAY_PARTY_Init",
+    "UPLAY_PARTY_InvitePartyToGame",
+    "UPLAY_PARTY_InviteToParty",
+    "UPLAY_PARTY_IsInParty",
+    "UPLAY_PARTY_IsPartyLeader",
+    "UPLAY_PARTY_PromoteToLeader",
+    "UPLAY_PARTY_RespondToGameInvite",
+    "UPLAY_PARTY_SetGuest",
+    "UPLAY_PARTY_SetUserData",
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_RespondToGameInvite",
+   "rva": "0x12c6",
+   "thunk_target_rva": "0x5e90",
+   "insns": 188,
+   "arg_touch_order": [
+    "rcx@0x5eb8",
+    "rdx@0x5ec7",
+    "r8@0x6036"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_RespondToGameInvite",
+    "UPLAY_PARTY_SetGuest",
+    "UPLAY_PARTY_SetUserData",
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_IsOwned",
+   "rva": "0x12d5",
+   "thunk_target_rva": "0x6ba0",
+   "insns": 201,
+   "arg_touch_order": [
+    "rcx@0x6bc1",
+    "rdx@0x6bd0",
+    "r8@0x6cd6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_IsOwned",
+    "UPLAY_USER_ReleaseCdKeyList",
+    "UPLAY_USER_ReleaseConsumeItemResult",
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_CHAT_SendMessage",
+   "rva": "0x12da",
+   "thunk_target_rva": "0x4a10",
+   "insns": 117,
+   "arg_touch_order": [
+    "r8@0x4a26",
+    "rdx@0x4a29",
+    "rcx@0x4a2c"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_CHAT_SendMessage",
+    "UPLAY_CHAT_SetMessagesRead"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_GetId",
+   "rva": "0x12f8",
+   "thunk_target_rva": "0x5b70",
+   "insns": 533,
+   "arg_touch_order": [
+    "rcx@0x5b8d",
+    "rdx@0x5b9c",
+    "r8@0x6036"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_GetId",
+    "UPLAY_PARTY_GetInGameMemberList",
+    "UPLAY_PARTY_Init",
+    "UPLAY_PARTY_InvitePartyToGame",
+    "UPLAY_PARTY_InviteToParty",
+    "UPLAY_PARTY_IsInParty",
+    "UPLAY_PARTY_IsPartyLeader",
+    "UPLAY_PARTY_PromoteToLeader",
+    "UPLAY_PARTY_RespondToGameInvite",
+    "UPLAY_PARTY_SetGuest",
+    "UPLAY_PARTY_SetUserData",
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_CHAT_Init",
+   "rva": "0x12fd",
+   "thunk_target_rva": "0x4950",
+   "insns": 201,
+   "arg_touch_order": [
+    "rcx@0x4971",
+    "rdx@0x4980",
+    "r8@0x4a26"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_CHAT_Init",
+    "UPLAY_CHAT_ReleaseHistoryList",
+    "UPLAY_CHAT_SendMessage",
+    "UPLAY_CHAT_SetMessagesRead"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_ReleaseConsumeItemResult",
+   "rva": "0x1302",
+   "thunk_target_rva": "0x6c60",
+   "insns": 117,
+   "arg_touch_order": [
+    "rcx@0x6c6d",
+    "rdx@0x6c91",
+    "r8@0x6cd6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_ReleaseConsumeItemResult",
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_SAVE_GetSavegames",
+   "rva": "0x1311",
+   "thunk_target_rva": "0x61b0",
+   "insns": 415,
+   "arg_touch_order": [
+    "rdx@0x61c1",
+    "rcx@0x61c4",
+    "r9@0x623b",
+    "r8@0x623e"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_SAVE_GetSavegames",
+    "UPLAY_SAVE_Open",
+    "UPLAY_SAVE_Read",
+    "UPLAY_SAVE_ReleaseGameList",
+    "UPLAY_SAVE_Remove",
+    "UPLAY_SAVE_SetName",
+    "UPLAY_SAVE_Write"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_CHAT_ReleaseHistoryList",
+   "rva": "0x1325",
+   "thunk_target_rva": "0x49b0",
+   "insns": 158,
+   "arg_touch_order": [
+    "rcx@0x49bd",
+    "rdx@0x49e1",
+    "r8@0x4a26"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_CHAT_ReleaseHistoryList",
+    "UPLAY_CHAT_SendMessage",
+    "UPLAY_CHAT_SetMessagesRead"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_Update",
+   "rva": "0x132a",
+   "thunk_target_rva": "0x4270",
+   "insns": 47,
+   "arg_touch_order": [
+    "rcx@0x428d",
+    "rdx@0x429c"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_Update"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0",
+    "sub_42588"
+   ],
+   "export_thunks": [],
+   "ret_shape": "tail-jmp",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_FRIENDS_RequestFriendship",
+   "rva": "0x132f",
+   "thunk_target_rva": "0x4fd0",
+   "insns": 128,
+   "arg_touch_order": [
+    "rdx@0x4fe1",
+    "rcx@0x4fe4",
+    "r9@0x505b",
+    "r8@0x505e"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_FRIENDS_RequestFriendship",
+    "UPLAY_FRIENDS_ShowFriendSelectionUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_GetCdKeys",
+   "rva": "0x133e",
+   "thunk_target_rva": "0x68f0",
+   "insns": 518,
+   "arg_touch_order": [
+    "rdx@0x6901",
+    "rcx@0x6904",
+    "r8@0x6cd6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_GetCdKeys",
+    "UPLAY_USER_GetConsumableItems",
+    "UPLAY_USER_GetEmailUtf8",
+    "UPLAY_USER_GetNameUtf8",
+    "UPLAY_USER_GetTicketUtf8",
+    "UPLAY_USER_IsConnected",
+    "UPLAY_USER_IsInOfflineMode",
+    "UPLAY_USER_IsOwned",
+    "UPLAY_USER_ReleaseCdKeyList",
+    "UPLAY_USER_ReleaseConsumeItemResult",
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_FRIENDS_DisableFriendMenuItem",
+   "rva": "0x1343",
+   "thunk_target_rva": "0x4cf0",
+   "insns": 444,
+   "arg_touch_order": [
+    "rcx@0x4d11",
+    "rdx@0x4d20",
+    "r8@0x4d66",
+    "r9@0x505b"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_FRIENDS_DisableFriendMenuItem",
+    "UPLAY_FRIENDS_EnableFriendMenuItem",
+    "UPLAY_FRIENDS_GetFriendList",
+    "UPLAY_FRIENDS_Init",
+    "UPLAY_FRIENDS_InviteToGame",
+    "UPLAY_FRIENDS_IsBlackListed",
+    "UPLAY_FRIENDS_IsFriend",
+    "UPLAY_FRIENDS_RequestFriendship",
+    "UPLAY_FRIENDS_ShowFriendSelectionUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_ConsumeItem",
+   "rva": "0x134d",
+   "thunk_target_rva": "0x6790",
+   "insns": 679,
+   "arg_touch_order": [
+    "r9@0x67ab",
+    "r8@0x67ae",
+    "rcx@0x67b3",
+    "rdx@0x67d7"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_ConsumeItem",
+    "UPLAY_USER_GetAccountIdUtf8",
+    "UPLAY_USER_GetCdKeyUtf8",
+    "UPLAY_USER_GetCdKeys",
+    "UPLAY_USER_GetConsumableItems",
+    "UPLAY_USER_GetEmailUtf8",
+    "UPLAY_USER_GetNameUtf8",
+    "UPLAY_USER_GetTicketUtf8",
+    "UPLAY_USER_IsConnected",
+    "UPLAY_USER_IsInOfflineMode",
+    "UPLAY_USER_IsOwned",
+    "UPLAY_USER_ReleaseCdKeyList",
+    "UPLAY_USER_ReleaseConsumeItemResult",
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_GetEmailUtf8",
+   "rva": "0x135c",
+   "thunk_target_rva": "0x69c0",
+   "insns": 431,
+   "arg_touch_order": [
+    "rcx@0x69dd",
+    "rdx@0x69ec",
+    "r8@0x6cd6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_GetEmailUtf8",
+    "UPLAY_USER_GetNameUtf8",
+    "UPLAY_USER_GetTicketUtf8",
+    "UPLAY_USER_IsConnected",
+    "UPLAY_USER_IsInOfflineMode",
+    "UPLAY_USER_IsOwned",
+    "UPLAY_USER_ReleaseCdKeyList",
+    "UPLAY_USER_ReleaseConsumeItemResult",
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_ACH_ReleaseAchievementImage",
+   "rva": "0x1366",
+   "thunk_target_rva": "0x45a0",
+   "insns": 135,
+   "arg_touch_order": [
+    "rcx@0x45ad",
+    "rdx@0x45d1",
+    "r8@0x46c6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_ACH_ReleaseAchievementImage",
+    "UPLAY_ACH_ReleaseAchievementList",
+    "UPLAY_ACH_Write"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_DisablePartyMemberMenuItem",
+   "rva": "0x136b",
+   "thunk_target_rva": "0x5a30",
+   "insns": 671,
+   "arg_touch_order": [
+    "rcx@0x5a51",
+    "rdx@0x5a60",
+    "r8@0x5aa6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_DisablePartyMemberMenuItem",
+    "UPLAY_PARTY_EnablePartyMemberMenuItem",
+    "UPLAY_PARTY_GetFullMemberList",
+    "UPLAY_PARTY_GetId",
+    "UPLAY_PARTY_GetInGameMemberList",
+    "UPLAY_PARTY_Init",
+    "UPLAY_PARTY_InvitePartyToGame",
+    "UPLAY_PARTY_InviteToParty",
+    "UPLAY_PARTY_IsInParty",
+    "UPLAY_PARTY_IsPartyLeader",
+    "UPLAY_PARTY_PromoteToLeader",
+    "UPLAY_PARTY_RespondToGameInvite",
+    "UPLAY_PARTY_SetGuest",
+    "UPLAY_PARTY_SetUserData",
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_ACH_EarnAchievement",
+   "rva": "0x137f",
+   "thunk_target_rva": "0x4400",
+   "insns": 323,
+   "arg_touch_order": [
+    "rdx@0x4411",
+    "rcx@0x4428",
+    "r8@0x4486",
+    "r9@0x451b"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_ACH_EarnAchievement",
+    "UPLAY_ACH_GetAchievementImage",
+    "UPLAY_ACH_GetAchievements",
+    "UPLAY_ACH_ReleaseAchievementImage",
+    "UPLAY_ACH_ReleaseAchievementList",
+    "UPLAY_ACH_Write"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_SetLanguage",
+   "rva": "0x1384",
+   "thunk_target_rva": "0x4150",
+   "insns": 67,
+   "arg_touch_order": [
+    "rcx@0x4171",
+    "rdx@0x4180"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_SetLanguage"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0",
+    "sub_182b0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_FRIENDS_IsBlackListed",
+   "rva": "0x138e",
+   "thunk_target_rva": "0x4f10",
+   "insns": 210,
+   "arg_touch_order": [
+    "rcx@0x4f1d",
+    "rdx@0x4f41",
+    "r9@0x505b",
+    "r8@0x505e"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_FRIENDS_IsBlackListed",
+    "UPLAY_FRIENDS_IsFriend",
+    "UPLAY_FRIENDS_RequestFriendship",
+    "UPLAY_FRIENDS_ShowFriendSelectionUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_GetCdKeyUtf8",
+   "rva": "0x1393",
+   "thunk_target_rva": "0x6890",
+   "insns": 561,
+   "arg_touch_order": [
+    "rcx@0x68b1",
+    "rdx@0x68c0",
+    "r8@0x6cd6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_GetCdKeyUtf8",
+    "UPLAY_USER_GetCdKeys",
+    "UPLAY_USER_GetConsumableItems",
+    "UPLAY_USER_GetEmailUtf8",
+    "UPLAY_USER_GetNameUtf8",
+    "UPLAY_USER_GetTicketUtf8",
+    "UPLAY_USER_IsConnected",
+    "UPLAY_USER_IsInOfflineMode",
+    "UPLAY_USER_IsOwned",
+    "UPLAY_USER_ReleaseCdKeyList",
+    "UPLAY_USER_ReleaseConsumeItemResult",
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_SetGuest",
+   "rva": "0x139d",
+   "thunk_target_rva": "0x5f00",
+   "insns": 140,
+   "arg_touch_order": [
+    "rdx@0x5f11",
+    "rcx@0x5f14",
+    "r8@0x6036"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_SetGuest",
+    "UPLAY_PARTY_SetUserData",
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_SetGameSession",
+   "rva": "0x13b1",
+   "thunk_target_rva": "0x6cc0",
+   "insns": 76,
+   "arg_touch_order": [
+    "r8@0x6cd6",
+    "rdx@0x6cd9",
+    "rcx@0x6cdc"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_SAVE_Open",
+   "rva": "0x13b6",
+   "thunk_target_rva": "0x6220",
+   "insns": 369,
+   "arg_touch_order": [
+    "r9@0x623b",
+    "r8@0x623e",
+    "rcx@0x6257",
+    "rdx@0x6266"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_SAVE_Open",
+    "UPLAY_SAVE_Read",
+    "UPLAY_SAVE_ReleaseGameList",
+    "UPLAY_SAVE_Remove",
+    "UPLAY_SAVE_SetName",
+    "UPLAY_SAVE_Write"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_WIN_SetActionsCompleted",
+   "rva": "0x13cf",
+   "thunk_target_rva": "0x70f0",
+   "insns": 113,
+   "arg_touch_order": [
+    "r8@0x7106",
+    "rcx@0x710b",
+    "rdx@0x712f"
+   ],
+   "arg_writes": [],
+   "arg_reads": [
+    {
+     "reg": "rcx",
+     "disp": 0,
+     "at": "mov rax, qword ptr [rcx]"
+    }
+   ],
+   "strings": [
+    "UPLAY_WIN_SetActionsCompleted"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0",
+    "sub_148b0",
+    "sub_721e"
+   ],
+   "export_thunks": [],
+   "ret_shape": "tail-jmp",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_IsInParty",
+   "rva": "0x13d9",
+   "thunk_target_rva": "0x5d60",
+   "insns": 316,
+   "arg_touch_order": [
+    "rcx@0x5d6d",
+    "rdx@0x5d91",
+    "r8@0x6036"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_IsInParty",
+    "UPLAY_PARTY_IsPartyLeader",
+    "UPLAY_PARTY_PromoteToLeader",
+    "UPLAY_PARTY_RespondToGameInvite",
+    "UPLAY_PARTY_SetGuest",
+    "UPLAY_PARTY_SetUserData",
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_CHAT_SetMessagesRead",
+   "rva": "0x13e8",
+   "thunk_target_rva": "0x4aa0",
+   "insns": 51,
+   "arg_touch_order": [
+    "rcx@0x4aad",
+    "rdx@0x4ad1",
+    "r8@0x4b06"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_CHAT_SetMessagesRead"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_ShowGameInviteOverlayUI",
+   "rva": "0x13f2",
+   "thunk_target_rva": "0x5fd0",
+   "insns": 53,
+   "arg_touch_order": [
+    "rcx@0x5ff1",
+    "rdx@0x6000",
+    "r8@0x6036"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_FRIENDS_InviteToGame",
+   "rva": "0x1406",
+   "thunk_target_rva": "0x4ea0",
+   "insns": 256,
+   "arg_touch_order": [
+    "rdx@0x4eb1",
+    "rcx@0x4eb4",
+    "r9@0x505b",
+    "r8@0x505e"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_FRIENDS_InviteToGame",
+    "UPLAY_FRIENDS_IsBlackListed",
+    "UPLAY_FRIENDS_IsFriend",
+    "UPLAY_FRIENDS_RequestFriendship",
+    "UPLAY_FRIENDS_ShowFriendSelectionUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_OVERLAY_SetShopUrl",
+   "rva": "0x1410",
+   "thunk_target_rva": "0x57d0",
+   "insns": 145,
+   "arg_touch_order": [
+    "rdx@0x57e1",
+    "rcx@0x57e4",
+    "r8@0x5916"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_OVERLAY_SetShopUrl",
+    "UPLAY_OVERLAY_Show",
+    "UPLAY_OVERLAY_ShowShopUrl"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_INSTALLER_GetChunkIdsFromTag",
+   "rva": "0x1415",
+   "thunk_target_rva": "0x5240",
+   "insns": 275,
+   "arg_touch_order": [
+    "rdx@0x5251",
+    "rcx@0x5254",
+    "r8@0x54a6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_INSTALLER_GetChunkIdsFromTag",
+    "UPLAY_INSTALLER_GetChunks",
+    "UPLAY_INSTALLER_GetLanguageUtf8",
+    "UPLAY_INSTALLER_Init",
+    "UPLAY_INSTALLER_ReleaseChunkIdList",
+    "UPLAY_INSTALLER_UpdateInstallOrder"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_ClearGameSession",
+   "rva": "0x1424",
+   "thunk_target_rva": "0x6730",
+   "insns": 725,
+   "arg_touch_order": [
+    "rcx@0x674d",
+    "rdx@0x675c",
+    "r9@0x67ab",
+    "r8@0x67ae"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_ClearGameSession",
+    "UPLAY_USER_ConsumeItem",
+    "UPLAY_USER_GetAccountIdUtf8",
+    "UPLAY_USER_GetCdKeyUtf8",
+    "UPLAY_USER_GetCdKeys",
+    "UPLAY_USER_GetConsumableItems",
+    "UPLAY_USER_GetEmailUtf8",
+    "UPLAY_USER_GetNameUtf8",
+    "UPLAY_USER_GetTicketUtf8",
+    "UPLAY_USER_IsConnected",
+    "UPLAY_USER_IsInOfflineMode",
+    "UPLAY_USER_IsOwned",
+    "UPLAY_USER_ReleaseCdKeyList",
+    "UPLAY_USER_ReleaseConsumeItemResult",
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_INSTALLER_GetChunks",
+   "rva": "0x1433",
+   "thunk_target_rva": "0x52b0",
+   "insns": 229,
+   "arg_touch_order": [
+    "rcx@0x52bd",
+    "rdx@0x52e1",
+    "r8@0x54a6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_INSTALLER_GetChunks",
+    "UPLAY_INSTALLER_GetLanguageUtf8",
+    "UPLAY_INSTALLER_Init",
+    "UPLAY_INSTALLER_ReleaseChunkIdList",
+    "UPLAY_INSTALLER_UpdateInstallOrder"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_INSTALLER_ReleaseChunkIdList",
+   "rva": "0x143d",
+   "thunk_target_rva": "0x53d0",
+   "insns": 99,
+   "arg_touch_order": [
+    "rcx@0x53dd",
+    "rdx@0x5401",
+    "r8@0x54a6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_INSTALLER_ReleaseChunkIdList",
+    "UPLAY_INSTALLER_UpdateInstallOrder"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_INSTALLER_UpdateInstallOrder",
+   "rva": "0x144c",
+   "thunk_target_rva": "0x5430",
+   "insns": 58,
+   "arg_touch_order": [
+    "rcx@0x5443",
+    "rdx@0x5467",
+    "r8@0x54a6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_INSTALLER_UpdateInstallOrder"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_AVATAR_Release",
+   "rva": "0x1460",
+   "thunk_target_rva": "0x4790",
+   "insns": 51,
+   "arg_touch_order": [
+    "rcx@0x479d",
+    "rdx@0x47c1",
+    "r8@0x47f6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_AVATAR_Release"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_PARTY_InviteToParty",
+   "rva": "0x1465",
+   "thunk_target_rva": "0x5cf0",
+   "insns": 362,
+   "arg_touch_order": [
+    "rdx@0x5d01",
+    "rcx@0x5d04",
+    "r8@0x6036"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_PARTY_InviteToParty",
+    "UPLAY_PARTY_IsInParty",
+    "UPLAY_PARTY_IsPartyLeader",
+    "UPLAY_PARTY_PromoteToLeader",
+    "UPLAY_PARTY_RespondToGameInvite",
+    "UPLAY_PARTY_SetGuest",
+    "UPLAY_PARTY_SetUserData",
+    "UPLAY_PARTY_ShowGameInviteOverlayUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_USER_IsConnected",
+   "rva": "0x146a",
+   "thunk_target_rva": "0x6ae0",
+   "insns": 293,
+   "arg_touch_order": [
+    "rcx@0x6afd",
+    "rdx@0x6b0c",
+    "r8@0x6cd6"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_USER_IsConnected",
+    "UPLAY_USER_IsInOfflineMode",
+    "UPLAY_USER_IsOwned",
+    "UPLAY_USER_ReleaseCdKeyList",
+    "UPLAY_USER_ReleaseConsumeItemResult",
+    "UPLAY_USER_SetGameSession"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_HasOverlappedOperationCompleted",
+   "rva": "0x147e",
+   "thunk_target_rva": "0x56e0",
+   "insns": 251,
+   "arg_touch_order": [
+    "rcx@0x56ed",
+    "rdx@0x5711",
+    "r8@0x5916"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_HasOverlappedOperationCompleted",
+    "UPLAY_OVERLAY_ShowFacebookAuthentication",
+    "UPLAY_OVERLAY_SetShopUrl",
+    "UPLAY_OVERLAY_Show",
+    "UPLAY_OVERLAY_ShowShopUrl"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_ACH_GetAchievementImage",
+   "rva": "0x1488",
+   "thunk_target_rva": "0x4470",
+   "insns": 275,
+   "arg_touch_order": [
+    "r8@0x4486",
+    "rdx@0x4489",
+    "rcx@0x44a0",
+    "r9@0x451b"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_ACH_GetAchievementImage",
+    "UPLAY_ACH_GetAchievements",
+    "UPLAY_ACH_ReleaseAchievementImage",
+    "UPLAY_ACH_ReleaseAchievementList",
+    "UPLAY_ACH_Write"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  },
+  {
+   "name": "UPLAY_FRIENDS_Init",
+   "rva": "0x1492",
+   "thunk_target_rva": "0x4e40",
+   "insns": 299,
+   "arg_touch_order": [
+    "rcx@0x4e61",
+    "rdx@0x4e70",
+    "r9@0x505b",
+    "r8@0x505e"
+   ],
+   "arg_writes": [],
+   "arg_reads": [],
+   "strings": [
+    "UPLAY_FRIENDS_Init",
+    "UPLAY_FRIENDS_InviteToGame",
+    "UPLAY_FRIENDS_IsBlackListed",
+    "UPLAY_FRIENDS_IsFriend",
+    "UPLAY_FRIENDS_RequestFriendship",
+    "UPLAY_FRIENDS_ShowFriendSelectionUI"
+   ],
+   "imports_called": [],
+   "internal_calls": [
+    "sub_422b8",
+    "sub_1005",
+    "sub_183f0"
+   ],
+   "export_thunks": [],
+   "ret_shape": "ret",
+   "terminated": true,
+   "tags": [
+    "has-strings"
+   ]
+  }
+ ]
+}
