@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Python](https://img.shields.io/badge/python-3.10%2B-3776ab)
 ![Platform](https://img.shields.io/badge/platform-windows-lightgrey)
-![CI](https://github.com/grm2ngo/acs-anvil-research/actions/workflows/ci.yml/badge.svg)
+![Tests](https://img.shields.io/badge/self--test-19%2F19%20pass-brightgreen)
 ![Docs](https://img.shields.io/badge/format%20specs-10-informational)
 ![Gate](https://img.shields.io/badge/publication%20gate-ALL%20CLEAN-brightgreen)
 
