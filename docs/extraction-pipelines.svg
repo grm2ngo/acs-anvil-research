@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="380" viewBox="0 0 880 380" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arr3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a5568"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="880" height="380" fill="#ffffff"/>
+  <style>
+    .tit{font-size:15px;font-weight:600;fill:#1a202c}
+    .lane{font-size:12px;font-weight:700;fill:#2c7a7b;letter-spacing:1px}
+    .lbl{font-size:12.5px;fill:#2d3748;font-weight:600}
+    .body{font-size:11px;fill:#4a5568}
+    .box{fill:#edf2f7;stroke:#4a5568;stroke-width:1.2}
+    .tool{fill:#e6fffa;stroke:#2c7a7b}
+    .out{fill:#fefcbf;stroke:#b7791f}
+  </style>
+
+  <text x="20" y="28" class="tit">extraction pipelines — from container to asset</text>
+  <text x="860" y="28" class="body" text-anchor="end">every stage documented in docs/</text>
+
+  <!-- MESH lane -->
+  <text x="20" y="66" class="lane">MESH</text>
+  <rect x="20" y="78" width="170" height="58" rx="6" class="box"/>
+  <text x="32" y="99" class="lbl">index entry</text>
+  <text x="32" y="116" class="body">class Mesh · h415D9568</text>
+  <rect x="230" y="78" width="180" height="58" rx="6" class="box"/>
+  <text x="242" y="99" class="lbl">block sets</text>
+  <text x="242" y="116" class="body">LZO1X chunks · Adler-0 checks</text>
+  <rect x="460" y="78" width="180" height="58" rx="6" class="box"/>
+  <text x="472" y="99" class="lbl">resource container</text>
+  <text x="472" y="116" class="body">TOC → resource record body</text>
+  <rect x="690" y="74" width="170" height="64" rx="6" class="tool"/>
+  <text x="702" y="95" class="lbl">mesh_extract.py</text>
+  <text x="702" y="112" class="body">→ OBJ output</text>
+  <text x="702" y="128" class="body">vertex stride 20/28/32/40</text>
+  <line x1="190" y1="107" x2="222" y2="107" stroke="#4a5568" marker-end="url(#arr3)"/>
+  <line x1="410" y1="107" x2="452" y2="107" stroke="#4a5568" marker-end="url(#arr3)"/>
+  <line x1="640" y1="107" x2="682" y2="107" stroke="#4a5568" marker-end="url(#arr3)"/>
+
+  <!-- TEXTURE lane -->
+  <text x="20" y="196" class="lane">TEXTURE</text>
+  <rect x="20" y="208" width="170" height="58" rx="6" class="box"/>
+  <text x="32" y="229" class="lbl">index entry</text>
+  <text x="32" y="246" class="body">TextureMap hA2B7E917 · TopMip</text>
+  <rect x="230" y="208" width="180" height="58" rx="6" class="box"/>
+  <text x="242" y="229" class="lbl">mip chain</text>
+  <text x="242" y="246" class="body">TopMip + TextureMap pairs</text>
+  <rect x="460" y="208" width="180" height="58" rx="6" class="box"/>
+  <text x="472" y="229" class="lbl">GPU format</text>
+  <text x="472" y="246" class="body">BC1/2/3/5 · RGBA8 · R32F</text>
+  <rect x="690" y="204" width="170" height="64" rx="6" class="tool"/>
+  <text x="702" y="225" class="lbl">texture_extract.py</text>
+  <text x="702" y="242" class="body">→ PNG output</text>
+  <text x="702" y="258" class="body">cubemap: 6 faces</text>
+  <line x1="190" y1="237" x2="222" y2="237" stroke="#4a5568" marker-end="url(#arr3)"/>
+  <line x1="410" y1="237" x2="452" y2="237" stroke="#4a5568" marker-end="url(#arr3)"/>
+  <line x1="640" y1="237" x2="682" y2="237" stroke="#4a5568" marker-end="url(#arr3)"/>
+
+  <!-- shared footer -->
+  <rect x="20" y="300" width="840" height="46" rx="6" fill="#f7fafc" stroke="#a0aec0" stroke-dasharray="5 4"/>
+  <text x="34" y="319" class="body">both lanes start the same way: forge_reader.py opens the container, walks index + name tables,</text>
+  <text x="34" y="336" class="body">decompresses block sets — then each extractor takes over. Run on your own files; nothing ships here.</text>
+</svg>

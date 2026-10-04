@@ -3,7 +3,8 @@
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Python](https://img.shields.io/badge/python-3.10%2B-3776ab)
 ![Platform](https://img.shields.io/badge/platform-windows-lightgrey)
-![Docs](https://img.shields.io/badge/format%20specs-9-informational)
+![CI](https://github.com/grm2ngo/acs-anvil-research/actions/workflows/ci.yml/badge.svg)
+![Docs](https://img.shields.io/badge/format%20specs-10-informational)
 ![Gate](https://img.shields.io/badge/publication%20gate-ALL%20CLEAN-brightgreen)
 
 **Format tooling, specifications, and reverse-engineering notes for
@@ -60,6 +61,7 @@ New: the [19-byte locale selector](docs/localization-lang.md), the
 |---|---|
 | [`docs/forge-format.md`](docs/forge-format.md) | container spec: header, descriptors, index & name tables |
 | [`docs/forge-format-analysis.md`](docs/forge-format-analysis.md) | deep dive: block sets, LZO1X chunks, Adler-32, entry-0 quirk |
+| [`docs/forge-census.md`](docs/forge-census.md) | **all 40 archives · 357,161 entries · 107 classes** — per-archive roles + type distribution |
 | [`docs/exe-surface.md`](docs/exe-surface.md) | ACS.exe static surface: sections, the 31-DLL import wall, **12 named exports + RVAs** |
 | [`docs/install-layout.md`](docs/install-layout.md) | measured install map: forge/sound/video/dlc blocks, root config files |
 | [`docs/localization-lang.md`](docs/localization-lang.md) | the 19-byte locale selector, byte by byte |
@@ -94,6 +96,16 @@ Every fact in `docs/` was produced under an evidence-first workflow —
 constants re-derived by computation, cross-checked by independent methods,
 adversarially reviewed. `tools/pub_gate.py` is the lint this repo passes
 before anything is published (PII / contamination sweep): **ALL CLEAN**.
+CI re-runs the gate **and** a 19-check self-test on every push — against a
+**clean-room synthetic archive** (`tools/forge_synth.py`), so the tools are
+proven working without any game file:
+
+```bash
+python tools/forge_synth.py test.forge   # deterministic v27 container, 0 game bytes
+python tests/selftest.py                 # parse · names · decompress round-trip · extract · CLI
+```
+
+![extraction pipelines](docs/extraction-pipelines.svg)
 
 ## Status
 

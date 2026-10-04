@@ -3,7 +3,8 @@
 A measured map of the install's data layout: where content lives, what each
 area contains, and the small config files at the root. Useful for tool
 authors deciding what to read first. All counts/sizes measured on-disk;
-magics sampled per file class.
+magics sampled per file class. For what lives *inside* the 40 `.forge`
+containers, see the [forge census](forge-census.md).
 
 ![install anatomy](install-anatomy.svg)
 
@@ -14,7 +15,7 @@ magics sampled per file class.
 | root `DataPC*.forge` | 24 engine containers | ~29 GB |
 | `dlc_21/` (Jack the Ripper) | 9 `.forge` + 10 `.pck` + 9 `.bk2` | 15.92 GB |
 | `sounddata/PC/` | 53 Wwise packages (`.pck`, magic `AKPK`) | 7.00 GB |
-| `dlc_20/` (Dreadful Crimes) | 3 `.forge` + 10 `.pck` | 4.55 GB |
+| `dlc_20/` (The Last Maharaja) | 3 `.forge` + 10 `.pck` | 4.55 GB |
 | `videos/` | 133 Bink-2 clips (`.bk2`, magic `KB2i`) | 4.20 GiB |
 | `dlc_11/`…`dlc_14/` | 1 forge container each | 0.69–1.39 GB each |
 
@@ -23,8 +24,7 @@ Magics: `.forge` → `scimitar` (see the
 
 ## videos\ in detail
 
-- 85 top-level story/skill cinematics (largest single clip: 256 MB).
-- 16 language subfolders (`br cn cz de du en fr hu it jp ko mx pl ru sp tw`),
+- 85 top-level story/skill cinematics (largest single clip: 256 MB).- 16 language subfolders (`br cn cz de du en fr hu it jp ko mx pl ru sp tw`),
   each normally carrying localized `Epilepsy`, `pc_WarningSaving`,
   `warning_disclaimer` clips.
 - **`en\` is the only empty locale folder** — English warnings ride the

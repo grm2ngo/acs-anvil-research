@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Publication gate (PII / contamination sweep)
+        run: python tools/pub_gate.py
+      - name: Self-test on synthetic .forge fixture (no game files)
+        run: python tests/selftest.py
+      - name: Fixture build smoke
+        run: |
+          python tools/forge_synth.py "$RUNNER_TEMP/smoke.forge"
+          python tools/forge_reader.py list "$RUNNER_TEMP/smoke.forge" --limit 3
