@@ -1,17 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="120" font-family="Segoe UI, Arial, sans-serif">
-  <rect width="640" height="120" rx="12" fill="#0f1218"/>
-  <rect width="10" height="120" rx="4" fill="#2c7a7b"/>
-  <g fill="#e2e8f0" font-size="26" font-weight="600">
-    <text x="36" y="42">40 archives</text>
-    <text x="196" y="42">357,161 entries</text>
-    <text x="416" y="42">89/89 thunks</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="132" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="132" rx="12" fill="#0f1218"/>
+  <rect x="0" y="0" width="10" height="132" rx="4" fill="#2c7a7b"/>
+  <g>
+    <text x="44" y="52" fill="#81e6d9" font-size="30" font-weight="700">40</text>
+    <text x="44" y="86" fill="#e2e8f0" font-size="15" font-weight="600">.forge archives</text>
+    <text x="44" y="108" fill="#8fa0b3" font-size="13">containers fully mapped</text>
   </g>
-  <g fill="#7f8ea0" font-size="16">
-    <text x="36" y="70">.forge containers censused</text>
-    <text x="196" y="70">100% named, type-censused</text>
-    <text x="416" y="70">Uplay R1 ABI mapped</text>
+  <g>
+    <text x="264" y="52" fill="#81e6d9" font-size="30" font-weight="700">357,161</text>
+    <text x="264" y="86" fill="#e2e8f0" font-size="15" font-weight="600">entries censused</text>
+    <text x="264" y="108" fill="#8fa0b3" font-size="13">100% named · type-classified</text>
   </g>
-  <g fill="#2f8f8f" font-size="15">
-    <text x="36" y="100">snapshot 2026-10-05 · evidence-first workflow · publication gate: ALL CLEAN</text>
+  <g>
+    <text x="524" y="52" fill="#81e6d9" font-size="30" font-weight="700">89 / 89</text>
+    <text x="524" y="86" fill="#e2e8f0" font-size="15" font-weight="600">Uplay R1 exports</text>
+    <text x="524" y="108" fill="#8fa0b3" font-size="13">thunk targets + arg order</text>
   </g>
+  <g>
+    <text x="724" y="52" fill="#81e6d9" font-size="30" font-weight="700">6</text>
+    <text x="724" y="86" fill="#e2e8f0" font-size="15" font-weight="600">format specs</text>
+    <text x="724" y="108" fill="#8fa0b3" font-size="13">evidence-first workflow</text>
+  </g>
+  <line x1="238" y1="34" x2="238" y2="104" stroke="#263041" stroke-width="1.5"/>
+  <line x1="498" y1="34" x2="498" y2="104" stroke="#263041" stroke-width="1.5"/>
+  <line x1="698" y1="34" x2="698" y2="104" stroke="#263041" stroke-width="1.5"/>
 </svg>
