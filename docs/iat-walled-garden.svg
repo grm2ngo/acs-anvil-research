@@ -55,12 +55,12 @@
 
   <rect x="540" y="236" width="320" height="52" rx="6" class="grp"/>
   <text x="552" y="256" class="lbl">System (16)</text>
-  <text x="552" y="274" class="body">KERNEL32(×3) · USER32 · GDI32 · CRYPT32 · bcrypt · …</text>
+  <text x="552" y="274" class="body">KERNEL32 ×3 · USER32 · GDI32 · CRYPT32 · bcrypt …</text>
   <line x1="510" y1="262" x2="535" y2="262" stroke="#4a5568" marker-end="url(#arr2)"/>
 
   <rect x="540" y="298" width="320" height="52" rx="6" fill="#e6fffa" stroke="#2c7a7b"/>
   <text x="552" y="318" class="lbl">Behind the wall at runtime</text>
-  <text x="552" y="336" class="body">sqlitefs64 — LoadLibrary'd, never in the static IAT</text>
+  <text x="552" y="336" class="body">sqlitefs64 — LoadLibrary'd, not in the static IAT</text>
   <line x1="510" y1="310" x2="535" y2="324" stroke="#2c7a7b" stroke-dasharray="4 3"/>
 
   <!-- takeaway -->

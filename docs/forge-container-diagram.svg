@@ -75,7 +75,8 @@
   </g>
 
   <!-- tooling footer -->
-  <text x="45" y="570" class="sub">tooling: tools/forge_reader.py (index/census) · mesh_extract.py (OBJ) · texture_extract.py (BC1/2/3/5, cubemap, RGBA8, R32F)</text>
-  <text x="45" y="592" class="sub">format spec: docs/forge-format.md · analysis: docs/forge-format-analysis.md</text>
+  <text x="45" y="570" class="sub">tooling: forge_reader.py (index/census) · mesh_extract.py (OBJ)</text>
+  <text x="45" y="588" class="sub">texture_extract.py (BC1/2/3/5, cubemap, RGBA8, R32F)</text>
+  <text x="45" y="606" class="sub">format spec: docs/forge-format.md · analysis: docs/forge-format-analysis.md</text>
 
 </svg>
