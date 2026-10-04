@@ -96,9 +96,9 @@ Every fact in `docs/` was produced under an evidence-first workflow —
 constants re-derived by computation, cross-checked by independent methods,
 adversarially reviewed. `tools/pub_gate.py` is the lint this repo passes
 before anything is published (PII / contamination sweep): **ALL CLEAN**.
-CI re-runs the gate **and** a 19-check self-test on every push — against a
-**clean-room synthetic archive** (`tools/forge_synth.py`), so the tools are
-proven working without any game file:
+The whole check set runs locally in seconds — a 19-check self-test against
+a **clean-room synthetic archive** (`tools/forge_synth.py`), so the tools
+are proven working without any game file:
 
 ```bash
 python tools/forge_synth.py test.forge   # deterministic v27 container, 0 game bytes

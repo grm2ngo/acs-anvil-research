@@ -23,8 +23,8 @@ python tests/selftest.py                 # 19 checks, no game files
 ## 3. Gate must stay green
 
 `python tools/pub_gate.py` (PII / contamination sweep) must print
-`ALL CLEAN` before you push. CI runs it on every commit, plus the
-self-test above.
+`ALL CLEAN` before you push. The self-test above covers the tool surface
+in seconds, fully offline.
 
 ---
 

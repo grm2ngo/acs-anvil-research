@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.1 — 2026-10-05
+
+- Removed the CI workflow: the hosting account is billing-locked, so
+  GitHub Actions jobs cannot start. The 19-check self-test and the
+  publication gate remain — both run locally in seconds, no CI needed.
+
 ## v1.1.0 — 2026-10-05
 
 - **The forge census** (`docs/forge-census.md`): all 40 archives /
